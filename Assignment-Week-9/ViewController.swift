@@ -17,23 +17,7 @@ class ViewController: UIViewController {
     private let fontSemibold = "GillSans-SemiBold"
     private let fontBold = "GillSans-Bold"
     
-    private let data = [
-        Test(title: "Test competition 1", startDate: "2018-03-21", endDate: "2018-04-17", isCompleted: false, daysLeft: 27),
-        Test(title: "Test competition 2", startDate: "2018-05-10", endDate: "2018-06-06", isCompleted: true),
-        Test(title: "Test competition 3", startDate: "2018-07-15", endDate: "2018-08-10", isCompleted: false, daysLeft: 22),
-        Test(title: "Test competition 4", startDate: "2018-09-02", endDate: "2018-09-30", isCompleted: true),
-        Test(title: "Test competition 5", startDate: "2018-10-12", endDate: "2018-11-08", isCompleted: false, daysLeft: 18),
-        Test(title: "Test competition 6", startDate: "2018-11-25", endDate: "2018-12-22", isCompleted: true),
-        Test(title: "Test competition 7", startDate: "2019-01-14", endDate: "2019-02-10", isCompleted: false, daysLeft: 14),
-        Test(title: "Test competition 8", startDate: "2019-03-01", endDate: "2019-03-29", isCompleted: false, daysLeft: 9),
-        Test(title: "Test competition 9", startDate: "2019-04-09", endDate: "2019-05-06", isCompleted: false, daysLeft: 3),
-        Test(title: "Test competition 10", startDate: "2019-05-21", endDate: "2019-06-17", isCompleted: true),
-        Test(title: "Test competition 11", startDate: "2019-06-30", endDate: "2019-07-27", isCompleted: false, daysLeft: 20),
-        Test(title: "Test competition 12", startDate: "2019-08-15", endDate: "2019-09-11", isCompleted: true),
-        Test(title: "Test competition 13", startDate: "2019-09-30", endDate: "2019-10-27", isCompleted: false, daysLeft: 11),
-        Test(title: "Test competition 14", startDate: "2019-11-05", endDate: "2019-12-02", isCompleted: true),
-        Test(title: "Test competition 15", startDate: "2019-12-18", endDate: "2020-01-14", isCompleted: false, daysLeft: 5)
-    ]
+    private let data = AppRepository.shared.testList
 
     override func viewDidLoad() {
         super.viewDidLoad()

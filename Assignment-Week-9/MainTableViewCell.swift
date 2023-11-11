@@ -71,7 +71,7 @@ final class MainTableViewCell: UITableViewCell {
         fatalError("init(coder:) has not been implemented")
     }
     
-    func configure(_ test: Test) {
+    func configure(_ test: Task) {
         titleLabel.text = test.title
 
         dateButton.setTitle(" \(test.startDate) – \(test.endDate)", for: .normal)
@@ -85,21 +85,26 @@ final class MainTableViewCell: UITableViewCell {
         
         var color: UIColor
         
-        if test.isCompleted {
-            statusButton.setTitle(" Completed", for: .normal)
-            
-            color = UIColor(red: 0.28, green: 0.50, blue: 90, alpha: 1)
-        } else {
-            statusButton.setTitle(" \(test.daysLeft!) days left", for: .normal)
-            
-            switch test.daysLeft! {
-                case 1..<10:
-                    color = UIColor(red: 1.00, green: 0, blue: 0, alpha: 1)
-                case 10..<20:
-                    color = UIColor(red: 1.00, green: 0.45, blue: 0, alpha: 1)
-                default:
-                    color = UIColor(red: 1.00, green: 0.75, blue: 0, alpha: 1)
-            }
+        switch test.status {
+            case .completed:
+                statusButton.setTitle(" Completed", for: .normal)
+                
+                color = UIColor(red: 0.28, green: 0.50, blue: 90, alpha: 1)
+            case .inProgress:
+                statusButton.setTitle(" \(test.daysLeft!) days left", for: .normal)
+                
+                switch test.daysLeft! {
+                    case 1..<10:
+                        color = UIColor(red: 1.00, green: 0.35, blue: 0, alpha: 1)
+                    case 10..<20:
+                        color = UIColor(red: 1.00, green: 0.55, blue: 0, alpha: 1)
+                    default:
+                        color = UIColor(red: 1.00, green: 0.75, blue: 0, alpha: 1)
+                }
+            case .expired:
+                statusButton.setTitle(" Expired", for: .normal)
+                
+                color = UIColor(red: 1.00, green: 0, blue: 0, alpha: 1)
         }
         
         lineView.backgroundColor = color

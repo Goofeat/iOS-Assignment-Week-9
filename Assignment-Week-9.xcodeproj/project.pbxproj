@@ -15,7 +15,8 @@
 		F94FC3B32AF6315000875158 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F94FC3B12AF6315000875158 /* LaunchScreen.storyboard */; };
 		F94FC3BB2AF6321800875158 /* MainTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F94FC3BA2AF6321800875158 /* MainTableViewCell.swift */; };
 		F94FC3BE2AF6322800875158 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = F94FC3BD2AF6322800875158 /* SnapKit */; };
-		F94FC3C02AF633C500875158 /* Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = F94FC3BF2AF633C500875158 /* Test.swift */; };
+		F94FC3C02AF633C500875158 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = F94FC3BF2AF633C500875158 /* Task.swift */; };
+		F9CF8B452AFF305400C03075 /* AppRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9CF8B442AFF305400C03075 /* AppRepository.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,7 +29,8 @@
 		F94FC3B22AF6315000875158 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F94FC3B42AF6315000875158 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F94FC3BA2AF6321800875158 /* MainTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewCell.swift; sourceTree = "<group>"; };
-		F94FC3BF2AF633C500875158 /* Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test.swift; sourceTree = "<group>"; };
+		F94FC3BF2AF633C500875158 /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
+		F9CF8B442AFF305400C03075 /* AppRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRepository.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,7 +72,8 @@
 				F94FC3B12AF6315000875158 /* LaunchScreen.storyboard */,
 				F94FC3B42AF6315000875158 /* Info.plist */,
 				F94FC3BA2AF6321800875158 /* MainTableViewCell.swift */,
-				F94FC3BF2AF633C500875158 /* Test.swift */,
+				F94FC3BF2AF633C500875158 /* Task.swift */,
+				F9CF8B442AFF305400C03075 /* AppRepository.swift */,
 			);
 			path = "Assignment-Week-9";
 			sourceTree = "<group>";
@@ -152,7 +155,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F94FC3C02AF633C500875158 /* Test.swift in Sources */,
+				F94FC3C02AF633C500875158 /* Task.swift in Sources */,
+				F9CF8B452AFF305400C03075 /* AppRepository.swift in Sources */,
 				F94FC3AB2AF6314E00875158 /* ViewController.swift in Sources */,
 				F94FC3A72AF6314E00875158 /* AppDelegate.swift in Sources */,
 				F94FC3BB2AF6321800875158 /* MainTableViewCell.swift in Sources */,
