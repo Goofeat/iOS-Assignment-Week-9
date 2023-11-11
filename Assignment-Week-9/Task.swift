@@ -7,10 +7,14 @@
 
 import Foundation
 
-struct Test {
+struct Task {
     var title: String
     var startDate: String
     var endDate: String
-    var isCompleted: Bool = false
+    var status: Status = .inProgress
     var daysLeft: Int?
+    
+    enum Status {
+        case completed, inProgress, expired
+    }
 }
